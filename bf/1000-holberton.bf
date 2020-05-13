@@ -6,13 +6,13 @@
     > +                     add  1 to cell #4
 <<<< -                  decrement counter (cell #0)
 ]
-> ++ .
-> +++++ +++++ + .
---- .
------ ----- .
-+++ .
-+++++ +++++ +++ .
-++ .
------ .
-- .
->> .
+> ++ .			print 'H'	ascii 72
+> +++++ +++++ + .	print 'o'	ascii 111
+--- .	      		print 'l'	ascii 108
+----- ----- .		print 'b'	ascii 98
++++ . 	    		print 'e'	ascii 101
++++++ +++++ +++ .	print 'r'	ascii 114
+++ .  	    		print 't'	ascii 116
+----- .			print 'o'	ascii 111
+- .   			print 'n'	ascii 110
+>> .			print '\n'	ascii 10
