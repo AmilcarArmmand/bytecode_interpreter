@@ -2,8 +2,8 @@
 #define MONTY_H
 
 /* Libraries used  */
-#include <sdtio.h>
-#include <sdtlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <strings.h>
 #include <unistd.h>
 #include <fcntl.h>

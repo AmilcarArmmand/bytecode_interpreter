@@ -9,21 +9,21 @@
  */
 int main(int argc, char **argv)
 {
-	FILE montyfile_fd;
+	FILE *filestream_fd;
 	int exit_code;
 
-	montyfile_fd = NULL;
+	filestream_fd = NULL;
 	exit_code = EXIT_SUCCESS;
 
-	if (agrc != 2)
+	if (argc != 2)
 		return (EXIT_FAILURE); /* change later */
 
-	montyfile_fd = fopen(argv[1], O_RDONLY);
-	if (montyfile_fd == NULL)
+	filestream_fd = fopen(argv[1], 'r');
+	if (filestream_fd == NULL)
 		return (EXIT_FAILURE); /* change later */
 
-	exit_code = eval_monty(montyfile_fd);
-	fclose(montyfile_fd);
+	exit_code = eval_monty(filestream_fd);
+	fclose(filestream_fd);
 
 	return (exit_code);
 }
