@@ -16,11 +16,11 @@ int main(int argc, char **argv)
 	exit_code = EXIT_SUCCESS;
 
 	if (argc != 2)
-		return (EXIT_FAILURE); /* change later */
+		return (EXIT_FAILURE); /* exit code for invalid argc */
 
 	filestream_fd = fopen(argv[1], 'r');
 	if (filestream_fd == NULL)
-		return (EXIT_FAILURE); /* change later */
+		return (EXIT_FAILURE); /* exit code for open failure */
 
 	exit_code = eval_monty(filestream_fd);
 	fclose(filestream_fd);
